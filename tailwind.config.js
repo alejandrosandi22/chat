@@ -4,19 +4,25 @@ module.exports = {
   darkMode: 'class',
   theme: {
     colors: {
-      white: '#ffffff',
-      black: '#060606',
+      white: {
+        DEFAULT: '#ffffff',
+        secondary: '#f6f6f6',
+      },
+      black: {
+        DEFAULT: '#000000',
+        secondary: '#060606',
+      },
       primary: {
-        50: '#a9b8da',
-        100: '#9bacd4',
-        200: '#8da0ce',
-        300: '#7e95c8',
-        400: '#7089c2',
-        500: '#627dbc',
-        600: '#5471b6',
-        700: '#4460A0',
-        800: '#3d568f',
-        900: '#314572',
+        50: '#F3F7F6',
+        100: '#DAE7E4',
+        200: '#BCD3CE',
+        300: '#A9C7C0',
+        400: '#90B6AE',
+        500: '#35AC90',
+        600: '#2B8C76',
+        700: '#206857',
+        800: '#184E41',
+        900: '#0E2F27',
       },
       gray: {
         50: '#f9fafb',
