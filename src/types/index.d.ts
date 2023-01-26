@@ -6,3 +6,11 @@ interface AppLayoutProps {
 interface NavLayoutProps {
   children: React.ReactNode;
 }
+
+interface ContactsCardProps {
+  active: boolean;
+  avatar: string;
+  name: string;
+  lastMessage: string;
+  lastMessageDate: string;
+}
