@@ -13,7 +13,7 @@ export default function Profile() {
           <div className='profile-container h-full'>
             <Header />
             <div className='grid place-items-center h-full'>
-              <div className='grid grid-cols-1 lg:grid-cols-2 gap-5 my-8 lg:bg-black rounded-lg lg:p-10 lg:border'>
+              <div className='grid grid-cols-1 lg:grid-cols-2 gap-5 my-8 lg:bg-white lg:dark:bg-black rounded-lg lg:p-10 lg:border lg:border-gray-300 lg:dark:border-gray-600'>
                 <UserInformation />
                 <div className='space-y-3'>
                   <Settings />
