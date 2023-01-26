@@ -2,7 +2,7 @@ import Link from 'next/link';
 
 export default function Nav() {
   return (
-    <nav className='h-16 w-full lg:h-full lg:w-16 flex flex-row lg:flex-col justify-between items-center py-8 bg-white dark:bg-black'>
+    <nav className='fixed bottom-0 lg:relative h-16 w-full lg:h-full lg:w-16 flex flex-row lg:flex-col justify-between items-center py-8 bg-white dark:bg-black'>
       <div className='hidden lg:block'>
         <Link href='/chat'>
           <svg
