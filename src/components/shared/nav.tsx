@@ -2,7 +2,7 @@ import Link from 'next/link';
 
 export default function Nav() {
   return (
-    <nav className='fixed bottom-0 lg:relative h-16 w-full lg:h-full lg:w-16 flex flex-row lg:flex-col justify-between items-center py-8 bg-white dark:bg-black'>
+    <nav className='z-50 fixed bottom-0 lg:relative h-16 w-full lg:h-full lg:w-16 flex flex-row lg:flex-col justify-between items-center py-8 bg-white dark:bg-black'>
       <div className='hidden lg:block'>
         <Link href='/chat'>
           <svg
@@ -71,8 +71,11 @@ export default function Nav() {
         </Link>
       </div>
       <ul className='flex lg:flex-col items-center justify-around w-full lg:space-y-3'>
-        <li className='lg:hover:bg-primary-200 lg:dark:hover:bg-primary-700 p-2 rounded-md flex flex-col items-center'>
-          <Link href='/chat'>
+        <li>
+          <Link
+            href='/chat'
+            className='lg:hover:bg-primary-200 lg:dark:hover:bg-primary-700 lg:p-2 rounded-md flex flex-col items-center'
+          >
             <svg
               xmlns='http://www.w3.org/2000/svg'
               viewBox='0 0 24 24'
@@ -89,8 +92,11 @@ export default function Nav() {
             Chat
           </span>
         </li>
-        <li className='hover:bg-primary-200 dark:hover:bg-primary-700 p-2 rounded-md flex flex-col items-center'>
-          <Link href='/notifications'>
+        <li>
+          <Link
+            href='/notifications'
+            className='lg:hover:bg-primary-200 lg:dark:hover:bg-primary-700 lg:p-2 rounded-md flex flex-col items-center'
+          >
             <svg
               xmlns='http://www.w3.org/2000/svg'
               viewBox='0 0 24 24'
@@ -107,8 +113,11 @@ export default function Nav() {
             Notifications
           </span>
         </li>
-        <li className='hover:bg-primary-200 dark:hover:bg-primary-700 p-2 rounded-md'>
-          <Link href='/profile' className='flex flex-col items-center'>
+        <li>
+          <Link
+            href='/profile'
+            className='lg:hover:bg-primary-200 lg:dark:hover:bg-primary-700 lg:p-2 rounded-md flex flex-col items-center'
+          >
             <svg
               xmlns='http://www.w3.org/2000/svg'
               viewBox='0 0 24 24'
